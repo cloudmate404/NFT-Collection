@@ -31,4 +31,4 @@ main()
     process.exit(1);
   });
 
-// Crypto Devs Contract Address: 0x694ae5103488B78Dd21679B7e63Ba0e87a8cFf84
+// Crypto Devs Contract Address: 0xCD00eb26aAfD13744310633F6A353fc24df30Fb3

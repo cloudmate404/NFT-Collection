@@ -25,7 +25,7 @@
 
     uint public tokenIds;
 
-    uint public _price = 0.01 ether;
+    uint public _price = 0.001 ether;
 
     bool public _paused;
 

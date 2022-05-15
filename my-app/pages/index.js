@@ -67,7 +67,7 @@ export default function Home() {
       const tx = await nftContract.presaleMint({
         // the value should be in wei since ethereum doesnt allow decimals
         // its just better to import utils from ethers
-        value: utils.parseEther("0.01"),
+        value: utils.parseEther("0.001"),
       });
       await tx.wait();
       window.alert("CryptoDev minted successfully, Congratulations 🎈 ");
@@ -90,7 +90,7 @@ export default function Home() {
       );
 
       const tx = await nftContract.mint({
-        value: utils.parseEther("0.01"),
+        value: utils.parseEther("0.001"),
       });
       await tx.wait();
       window.alert("CryptoDev minted successfully, Congratulations 🎈 ");
