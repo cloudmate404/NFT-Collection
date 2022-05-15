@@ -231,10 +231,10 @@ export default function Home() {
 
     // If the users are NOT connected to Rinkeby, we need to tell them to switch to Rinkeby
     const { chainId } = await web3Provider.getNetwork();
-    if (chainId !== 4) {
-      window.alert("Please switch to the Rinkeby test network");
+    if (chainId !== 5) {
+      window.alert("Please switch to the Goerli test network");
       // Then you throw an error so the code does NOT progress
-      throw new Error("Please switch to the Rinkeby test network");
+      throw new Error("Please switch to the Goerli test network");
     }
 
     if (needSigner) {
@@ -273,7 +273,7 @@ export default function Home() {
   useEffect(() => {
     if (!walletConnected) {
       web3ModalRef.current = new Web3Modal({
-        network: "rinkeby",
+        network: "goerli",
         providerOptions: {},
         disableInjectedProvider: false,
       });
